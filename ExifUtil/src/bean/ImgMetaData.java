@@ -52,6 +52,30 @@ public class ImgMetaData {
 	
 	//色相定位
 	private String yCbCrPositioning;
+	
+	//曝光时间即快门速度
+	private String exposureTime;
+	
+	//光圈系数
+	private String fNumber;
+	
+	//感光度
+	private String iso;
+	
+	//exif版本
+	private String exifVersion;
+	
+	//是否使用闪光灯
+	private String flash;
+	
+	//焦距
+	private String focallength;
+	
+	//横向图像宽度
+	private String exifimagewidth;
+	
+	//纵向像素高度
+	private String exifimagelength;
         
 
 	public String getImgHeight() {
@@ -188,6 +212,70 @@ public class ImgMetaData {
 
 	public void setyCbCrPositioning(String yCbCrPositioning) {
 		this.yCbCrPositioning = yCbCrPositioning;
+	}
+
+	public String getExposureTime() {
+		return exposureTime;
+	}
+
+	public void setExposureTime(String exposureTime) {
+		this.exposureTime = exposureTime;
+	}
+
+	public String getfNumber() {
+		return fNumber;
+	}
+
+	public void setfNumber(String fNumber) {
+		this.fNumber = fNumber;
+	}
+
+	public String getIso() {
+		return iso;
+	}
+
+	public void setIso(String iso) {
+		this.iso = iso;
+	}
+
+	public String getExifVersion() {
+		return exifVersion;
+	}
+
+	public void setExifVersion(String exifVersion) {
+		this.exifVersion = exifVersion;
+	}
+
+	public String getFlash() {
+		return flash;
+	}
+
+	public void setFlash(String flash) {
+		this.flash = flash;
+	}
+
+	public String getFocallength() {
+		return focallength;
+	}
+
+	public void setFocallength(String focallength) {
+		this.focallength = focallength;
+	}
+
+	public String getExifimagewidth() {
+		return exifimagewidth;
+	}
+
+	public void setExifimagewidth(String exifimagewidth) {
+		this.exifimagewidth = exifimagewidth;
+	}
+
+	public String getExifimagelength() {
+		return exifimagelength;
+	}
+
+	public void setExifimagelength(String exifimagelength) {
+		this.exifimagelength = exifimagelength;
 	}   
 
 }
