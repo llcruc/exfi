@@ -10,7 +10,12 @@
     <!-- 设置上传文件大小限制 -->
     <constant name="struts.multipart.maxSize" value="104857600"/>
     
-    <package name="exif" extends="json-default" namespace="/" >
+    <package name="exif" extends="json-default" namespace="/">
+    	<action name="image" class="imageAction" method="metadata">
+    		<result name="success" type="json">
+    			<param name="root">resMap</param>
+    		</result>
+    	</action>
     
     </package>
 

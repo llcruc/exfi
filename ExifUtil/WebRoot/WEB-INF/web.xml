@@ -16,4 +16,9 @@
     <filter-name>struts2</filter-name>
     <url-pattern>*.action</url-pattern>
   </filter-mapping>
+  
+  <welcome-file-list> 
+  		 <welcome-file>/WEB-INF/jsp/image.jsp</welcome-file> 
+	</welcome-file-list>
+  
 </web-app>
