@@ -23,7 +23,7 @@ public class ExifUtil {
 				for(Tag tag:directory.getTags())
 				{
 					System.out.println(tag);
-					data.put(tag.getTagName(), tag.getDescription());
+					data.put(tag.getTagName().replaceAll(" ", "_").replaceAll("/", "_"), tag.getDescription());
 				}
 			}
 		} 

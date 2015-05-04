@@ -43,11 +43,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</form>
     	
     	<div class="container">
+    	
+    	<div class="panel panel-default">
+    		<div class="panel-heading" style="text-align: left;">
+                 <h4>ExifIFD</h4>
+            </div>
+            <div class="panel-body">
+            <div class="dataTable_wrapper">
     		<table class="table table-hover" style="text-align: center;">
 				<thead>
 					<th style="text-align: center;width: 30%;">元数据名称</th>
 					<th style="text-align: center;">Exif Tag Name</th>
-					<th style="text-align: center;">Exif Description</th>
+					<th style="text-align: center;width: 32%;">Exif Description</th>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			</div>
+		</div>
+		</div>
+    	
+    	
+    	
+    	<div class="panel panel-default">
+    		<div class="panel-heading" style="text-align: left;">
+                 <h4>ExifIFD</h4>
+            </div>
+            <div class="panel-body">
+            <div class="dataTable_wrapper">
+    		<table class="table table-hover" style="text-align: center;">
+				<thead>
+					<th style="text-align: center;width: 30%;">元数据名称</th>
+					<th style="text-align: center;">Exif Tag Name</th>
+					<th style="text-align: center;width: 32%;">Exif Description</th>
 				</thead>
 				<tbody>
 					<tr>
@@ -62,23 +91,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td>方向(部分相机支持)</td>
-						<td></td>
-						<td></td>
+						<td>Orientation</td>
+						<td id="Orientation"></td>
 					</tr>
 					<tr>
 						<td>X方向分辨率</td>
 						<td>X Resolution</td>
-						<td id="X Resolution"></td>
+						<td id="X_Resolution"></td>
 					</tr>
 					<tr>
 						<td>Y方向分辨率</td>
 						<td>Y Resolution</td>
-						<td id="Y Resolution"></td>
+						<td id="Y_Resolution"></td>
 					</tr>
 					<tr>
 						<td>分辨率单位</td>
 						<td>Resolution Unit</td>
-						<td id="Resolution Unit"></td>
+						<td id="Resolution_Unit"></td>
 					</tr>
 					<tr>
 						<td>软件</td>
@@ -88,82 +117,67 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<tr>
 						<td>日期和时间</td>
 						<td>Date/Time</td>
-						<td id="Date/Time"></td>
+						<td id="Date_Time"></td>
 					</tr>
 					<tr>
 						<td>色相定位</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>信息位置</td>
-						<td></td>
-						<td></td>
+						<td>YCbCr Positioning</td>
+						<td id="YCbCr_Positioning"></td>
 					</tr>
 					<tr>
 						<td>光圈系数</td>
 						<td>Aperture Value</td>
-						<td id="Aperture Value"></td>
+						<td id="Aperture_Value"></td>
 					</tr>
 					<tr>
 						<td>曝光程序</td>
 						<td>Exposure Program</td>
-						<td id="Exposure Program"></td>
+						<td id="Exposure_Program"></td>
 					</tr>
 					<tr>
 						<td>曝光补偿</td>
 						<td>Exposure Bias Value</td>
-						<td id="Exposure Bias Value"></td>
+						<td id="Exposure_Bias_Value"></td>
 					</tr>
 					<tr>
 						<td>曝光时间(即快门速度)</td>
 						<td>Exposure Time</td>
-						<td id="Exposure Time"></td>
+						<td id="Exposure_Time"></td>
 					</tr>
 					<tr>
 						<td>感光度</td>
 						<td>ISO Speed Ratings</td>
-						<td id="ISO Speed Ratings"></td>
+						<td id="ISO_Speed_Ratings"></td>
 					</tr>
 					<tr>
 						<td>Exif版本</td>
 						<td>Exif Version</td>
-						<td id="Exif Version"></td>
+						<td id="Exif_Version"></td>
 					</tr>
 					<tr>
 						<td>创建时间</td>
 						<td>Date/Time Original</td>
-						<td id="Date/Time Original"></td>
+						<td id="Date_Time_Original"></td>
 					</tr>
 					<tr>
 						<td>数字化时间</td>
 						<td>Date/Time Digitized</td>
-						<td id="Date/Time Digitized"></td>
+						<td id="Date_Time_Digitized"></td>
 					</tr>
 					<tr>
 						<td>图像构造(多指色彩组合方案)</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>压缩时每像素色彩位(BPP)</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>最大光圈</td>
-						<td></td>
-						<td></td>
+						<td>Components Configuration</td>
+						<td id="Components_Configuration"></td>
 					</tr>
 					<tr>
 						<td>测光方式</td>
-						<td></td>
-						<td></td>
+						<td>Metering Mode</td>
+						<td id="Metering_Mode"></td>
 					</tr>
 					<tr>
 						<td>光源(白平衡设置)</td>
 						<td>White Balance Mode</td>
-						<td id="White Balance Mode"></td>
+						<td id="White_Balance_Mode"></td>
 					</tr>
 					<tr>
 						<td>是否使用闪光灯</td>
@@ -172,52 +186,46 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td>焦距</td>
-						<td></td>
-						<td></td>
+						<td>Focal Length</td>
+						<td id="Focal_Length"></td>
 					</tr>
 					<tr>
 						<td>FlashPix版本(个别机型支持)</td>
 						<td>FlashPix Version</td>
-						<td id="FlashPix Version"></td>
+						<td id="FlashPix_Version"></td>
 					</tr>
 					<tr>
 						<td>色域、色彩空间</td>
 						<td>Color Space</td>
-						<td id="Color Space"></td>
+						<td id="Color_Space"></td>
 					</tr>
 					<tr>
 						<td>图像宽度(指横向像素数)</td>
 						<td>Exif Image Width</td>
-						<td id="Exif Image Width"></td>
+						<td id="Exif_Image_Width"></td>
 					</tr>
 					<tr>
 						<td>图像高度(指纵向像素数)</td>
 						<td>Exif Image Height</td>
-						<td id="Exif Image Height"></td>
-					</tr>
-					<tr>
-						<td>压缩比</td>
-						<td></td>
-						<td></td>
+						<td id="Exif_Image_Height"></td>
 					</tr>
 					<tr>
 						<td>压缩方式</td>
 						<td>Compression Type</td>
-						<td></td>
+						<td id="Compression_Type"></td>
 					</tr>
 					<tr>
 						<td>数据精度</td>
 						<td>Data Precision</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>压缩方式</td>
-						<td>Compression Type</td>
-						<td></td>
+						<td id="Data_Precision"></td>
 					</tr>
 					
 				</tbody>
 			</table>
+			</div>
+		</div>
+		</div>
+		
     	</div>
     </div>
     
@@ -234,7 +242,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				type:"POST",
     				success:function(data)
     				{
-    					console.log(data);	
+    					console.log(data);
+    					$.each(data,function(name,value){
+    						console.log(name);
+    						$("#"+name).html(value);
+    					});
     				}
     			});
     		});
