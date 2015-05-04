@@ -1,4 +1,4 @@
-package bean;
+package cn.bean;
 
 public class ImgMetaData {
     
