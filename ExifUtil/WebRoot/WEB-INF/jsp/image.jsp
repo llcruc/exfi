@@ -46,29 +46,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	
     	<div class="panel panel-default">
     		<div class="panel-heading" style="text-align: left;">
-                 <h4>ExifIFD</h4>
-            </div>
-            <div class="panel-body">
-            <div class="dataTable_wrapper">
-    		<table class="table table-hover" style="text-align: center;">
-				<thead>
-					<th style="text-align: center;width: 30%;">元数据名称</th>
-					<th style="text-align: center;">Exif Tag Name</th>
-					<th style="text-align: center;width: 32%;">Exif Description</th>
-				</thead>
-				<tbody>
-					
-				</tbody>
-			</table>
-			</div>
-		</div>
-		</div>
-    	
-    	
-    	
-    	<div class="panel panel-default">
-    		<div class="panel-heading" style="text-align: left;">
-                 <h4>ExifIFD</h4>
+                 <h4>IFD0</h4>
             </div>
             <div class="panel-body">
             <div class="dataTable_wrapper">
@@ -124,6 +102,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<td>YCbCr Positioning</td>
 						<td id="YCbCr_Positioning"></td>
 					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+		</div>
+    	
+    	
+    	
+    	<div class="panel panel-default">
+    		<div class="panel-heading" style="text-align: left;">
+                 <h4>ExifIFD</h4>
+            </div>
+            <div class="panel-body">
+            <div class="dataTable_wrapper">
+    		<table class="table table-hover" style="text-align: center;">
+				<thead>
+					<th style="text-align: center;width: 30%;">元数据名称</th>
+					<th style="text-align: center;">Exif Tag Name</th>
+					<th style="text-align: center;width: 32%;">Exif Description</th>
+				</thead>
+				<tbody>
+					
 					<tr>
 						<td>光圈系数</td>
 						<td>Aperture Value</td>
