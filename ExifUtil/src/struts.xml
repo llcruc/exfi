@@ -13,7 +13,7 @@
     <package name="exif" extends="json-default" namespace="/">
     	<action name="image" class="imageAction" method="metadata">
     		<result name="success" type="json">
-    			<param name="root">resMap</param>
+    			<param name="root">exif</param>
     		</result>
     	</action>
     

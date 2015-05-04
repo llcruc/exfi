@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.sf.json.JSONObject;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -20,6 +22,7 @@ public class ImageAction extends ActionSupport{
 	private ImageService imageService;
 	
 	private Map<String, Object> resMap;
+	private JSONObject exif;
 	private File image;
 	
 	/**
@@ -27,8 +30,8 @@ public class ImageAction extends ActionSupport{
 	 * @return
 	 */
 	public String metadata(){
-		resMap=new HashMap<String, Object>();
-		resMap.put("data", imageService.getImageMetadata(image));
+		exif=new JSONObject();
+		exif=JSONObject.fromObject(imageService.getImageMetadata(image));
 		return SUCCESS;
 	}
 
@@ -58,6 +61,14 @@ public class ImageAction extends ActionSupport{
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+	public JSONObject getExif() {
+		return exif;
+	}
+
+	public void setExif(JSONObject exif) {
+		this.exif = exif;
 	}
 	
 	
