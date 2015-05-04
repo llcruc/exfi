@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<div class="container">
     		<table class="table table-hover" style="text-align: center;">
 				<thead>
-					<th style="text-align: center;">元数据名称</th>
+					<th style="text-align: center;width: 30%;">元数据名称</th>
 					<th style="text-align: center;">Exif Tag Name</th>
 					<th style="text-align: center;">Exif Description</th>
 				</thead>
@@ -112,8 +112,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td>曝光补偿</td>
-						<td></td>
-						<td></td>
+						<td>Exposure Bias Value</td>
+						<td id="Exposure Bias Value"></td>
 					</tr>
 					<tr>
 						<td>曝光时间(即快门速度)</td>
@@ -122,8 +122,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td>感光度</td>
-						<td></td>
-						<td></td>
+						<td>ISO Speed Ratings</td>
+						<td id="ISO Speed Ratings"></td>
 					</tr>
 					<tr>
 						<td>Exif版本</td>
@@ -132,13 +132,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td>创建时间</td>
-						<td></td>
-						<td></td>
+						<td>Date/Time Original</td>
+						<td id="Date/Time Original"></td>
 					</tr>
 					<tr>
 						<td>数字化时间</td>
-						<td></td>
-						<td></td>
+						<td>Date/Time Digitized</td>
+						<td id="Date/Time Digitized"></td>
 					</tr>
 					<tr>
 						<td>图像构造(多指色彩组合方案)</td>
@@ -200,6 +200,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<td></td>
 						<td></td>
 					</tr>
+					<tr>
+						<td>压缩方式</td>
+						<td>Compression Type</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>数据精度</td>
+						<td>Data Precision</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>压缩方式</td>
+						<td>Compression Type</td>
+						<td></td>
+					</tr>
+					
 				</tbody>
 			</table>
     	</div>
