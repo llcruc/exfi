@@ -19,6 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="js/jquery.form.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 	<style type="text/css">
 		body{
@@ -31,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    float: left;
 		    position: absolute;
 		    margin-left: -558px;
-		    width: 25%;
+		    width: 20%;
 		    height: 240px;
 		    margin-top: 10px;
 		}
@@ -51,7 +52,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<div class="form-group">
     			<label for="image">选择照片</label>
     			<p><input type="file" name="image" id="image" style="display: none;" onchange="readfile(this)"/>
-    			<p><button type="button" id="button" class="btn btn-success">选择照片</button>
+    			<p><button type="button" id="button" class="btn btn-success"><i class="glyphicon glyphicon-camera"></i> 选择照片</button>
+    			   <a href="<%=basePath %>download.action" type="button" id="excel" class="btn btn-warning"><i class="fa fa-file-excel-o"></i> 导出Excel</a>
     		</div>
     	</form>
     	
@@ -435,6 +437,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			$("#image").click();
     		});
     		
+    		
+    		
     		$("#image").change(function(){
     			$(".value").html("");
     			
@@ -452,6 +456,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				}
     			});
     		});
+    		
+    		
     	});
     </script>
     

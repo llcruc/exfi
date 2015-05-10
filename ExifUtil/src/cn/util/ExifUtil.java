@@ -11,7 +11,7 @@ import com.drew.metadata.Tag;
 
 public class ExifUtil {
 	
-	private static  String FILE="C:\\Users\\LIUlichao\\Desktop\\IMG_0041.JPG";
+	private static  String FILE="C:\\Users\\Flyaway\\Desktop\\IMG_0036.JPG";
 	
 	public static JSONObject getMetadata(File file){
 		JSONObject data=new JSONObject();
@@ -26,7 +26,7 @@ public class ExifUtil {
 					data.put(tag.getTagName().replaceAll(" ", "_").replaceAll("/", "_"), tag.getDescription());
 				}
 			}
-		} 
+		}
 		catch (Exception e) 
 		{
 			e.printStackTrace();

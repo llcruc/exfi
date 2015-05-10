@@ -16,6 +16,18 @@
     			<param name="root">exif</param>
     		</result>
     	</action>
+    	
+    	<action name="download" class="imageAction" method="getExcel">
+    		<result name="success" type="stream">
+    			<param name="contentType">application/octet-stream</param>
+    			<param name="contentDisposition">attachment;filename="${fileName}"</param>
+32              <param name="inputName">downloadFile</param>
+34              <param name="bufferSize">2048</param>
+    		</result>
+    		<result name="error" type="json">
+    			<param name="root">resMap</param>
+    		</result>
+    	</action>
     
     </package>
 
