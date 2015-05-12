@@ -11,8 +11,13 @@ import com.drew.metadata.Tag;
 
 public class ExifUtil {
 	
-	private static  String FILE="C:\\Users\\Flyaway\\Desktop\\IMG_0036.JPG";
+	private static  String FILE="C:\\Users\\LIUlichao\\Desktop\\IMG_0041.JPG";
 	
+	/**
+	 * @desp 照片Exif元数据抽取
+	 * @param file 照片文件
+	 * @return 封装的json格式元数据
+	 */
 	public static JSONObject getMetadata(File file){
 		JSONObject data=new JSONObject();
 		try 
